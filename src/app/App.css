@@ -1,0 +1,102 @@
+.Wrapper {
+    max-width: 1140px;
+    background: #FFFFFF;
+    margin: auto;
+    padding: 0 calc(50vw - 1140px)
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    fill: #282c34;
+}
+
+
+.card {
+    width: 335px;
+    height: 105px;
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.card-title {
+
+}
+
+.card-title h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.card-info img {
+    height: 17px;
+}
+
+.card-info span {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    color: #979797;
+}
+
+.card button {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #D4343F;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.card button::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-bottom: 1px solid #D4343F;
+    border-left: 1px solid #D4343F;
+    background-color: #fff;
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(225deg);
+}
+
+@media (max-width: 1200px) {
+    .Wrapper {
+        padding: 0 calc(50vw - 450px)
+    }
+}
+
+@media (max-width: 1024px) {
+    .Wrapper {
+        padding: 0 calc(50vw - 350px)
+    }
+}
+
+@media (max-width: 768px) {
+    .Wrapper {
+        padding: 0 calc(50vw - 200px)
+    }
+}
+
+@media (max-width: 480px) {
+    .Wrapper {
+        padding: 0 calc(50vw - 170px)
+    }
+}
